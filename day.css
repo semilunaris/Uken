@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa;
+}
+
+.schedule {
+    width: 75%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.schedule-header {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+    border-bottom: 2px solid #004d40;
+}
+
+.schedule-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.schedule-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b2dfdb;
+    padding: 12px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.schedule-row:nth-child(odd) {
+    background-color: #f1f8e9;
+}
+
+.schedule-row:hover {
+    background-color: #e0f2f1;
+}
+
+.time {
+    font-size: 1.2em;
+    color: #004d40;
+}
+
+.event {
+    font-size: 1.1em;
+    color: #00796b;
+    font-weight: bold;
+}

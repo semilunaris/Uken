@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Административная страница</title>
+    <link rel="stylesheet" href="styles-admin.css">
+</head>
+<body>
+    <header>
+        <div class="header-info">
+            <a href="./calendar.html">
+                <div id="time">
+                    16.03.24 <br/>
+                    14:00 
+                </div>
+            </a>
+            <div ></div>
+            <a id="groups" href="./groups.html">Группы</a>
+            <a id="groups" href="./">Финансы</a>
+            <a id="groups" href="./statistics.html">Статистика</a>
+        </div>
+    </header>
+    <main>
+        <aside class="left-sidebar">
+            <div id="workout-schedule">
+                <div id="calendar">
+                   
+                </div>
+                <h2>Тренировки на сегодня 16.03.24</h2>
+                <ul id="today-workouts">
+                    <li>12:00 - 13:00: Детская группа</li>
+                    <li>13:00 - 14:00: Группа 18+</li>
+                    <li>14:00 - 15:00: Группа мастерства</li>
+                </ul>
+                <button id="book-individual-admin">Записать клиента на индивидуальную тренировку</button>
+            </div>
+        </aside>
+        <section id="news-feed">
+            <h2>Лента новостей</h2>
+            <div class="news-item">
+                <p>16.03.24 - Успешно завершился турнир среди детей.</p>
+            </div>
+            <div class="news-item">
+                <p>15.03.24 - Проведена встреча с новыми тренерами.</p>
+            </div>
+            <div id="news-input">
+                <input type="text" placeholder="Введите новость" id="news-text">
+                <button id="submit-news">Отправить</button>
+            </div>
+        </section>
+        <aside class="right-sidebar">
+            <div id="debts-list">
+                <h2>Должники</h2>
+                <ul>
+                    <li>Иванов Иван <span class="debt-amount">5000₽</span></li>
+                    <li>Петров Петр <span class="debt-amount">3000₽</span></li>
+                    <li>Сидоров Сидор <span class="debt-amount">4500₽</span></li>
+                </ul>
+            </div>
+            <div id="achievements">
+                <h2>Наши достижения</h2>
+                <ul>
+                    <li>Кубок города 2024</li>
+                    <li>Кубок области 2023</li>
+                    <li>Кубок чемпионов 2022</li>
+                </ul>
+            </div>
+            <div id="personal-stats">
+                <h2>Моя статистика</h2>
+                <p>Тренировок за месяц: 30</p>
+                <p>Часов тренировок: 32</p>
+                <p>Общее количество участников: 45</p>
+            </div>
+        </aside>
+    </main>
+    <br/>
+    <br/>
+    <footer>
+        &copy; 2024 Спортивный клуб
+    </footer>
+    <script src="script-admin.js"></script>
+</body>
+</html>

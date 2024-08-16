@@ -1,0 +1,126 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-info a {
+    background-color: #ff9800;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.header-info a:hover {
+    background-color: #e68900;
+}
+
+main {
+    padding: 20px;
+}
+
+#filters {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#filters h2 {
+    font-size: 1.8em;
+    color: #ff9800;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9800;
+    padding-bottom: 5px;
+}
+
+#time-period, #metrics {
+    margin-bottom: 20px;
+}
+
+#period {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#metrics label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#metrics input {
+    margin-right: 10px;
+}
+
+#detailed-stats {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#detailed-stats h2 {
+    font-size: 1.8em;
+    color: #ff9800;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9800;
+    padding-bottom: 5px;
+}
+
+#stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#stats-table th, #stats-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#stats-table th {
+    background-color: #ff9800;
+    color: white;
+}
+
+#stats-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+#stats-table tfoot td {
+    font-weight: bold;
+    background-color: #ff9800;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

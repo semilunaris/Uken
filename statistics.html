@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="statistics.css">
+</head>
+<body>
+    <header>
+        <div class="header-info">
+            <a href="./">Главная</a>
+            <a href="./admin.html">Админка</a>
+        </div>
+    </header>
+    <main>
+        <section id="filters">
+            <h2>Фильтры</h2>
+            <div id="time-period">
+                <label for="period">Выберите период времени:</label>
+                <select id="period">
+                    <option value="today">Сегодня</option>
+                    <option value="yesterday">Вчера</option>
+                    <option value="custom">Пользовательский</option>
+                </select>
+            </div>
+            <div id="metrics">
+                <h3>Показатели:</h3>
+                <label><input type="checkbox" checked> Количество посещений</label>
+                <label><input type="checkbox" checked> Количество тренировок</label>
+                <label><input type="checkbox" checked> Время тренировок</label>
+                <label><input type="checkbox" checked> Прибыль</label>
+            </div>
+        </section>
+
+        <section id="detailed-stats">
+            <h2>Подробная статистика</h2>
+            <table id="stats-table">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Дата платежа</th>
+                        <th>Сумма</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Иванов Иван</td>
+                        <td>16.04.21</td>
+                        <td>5000₽</td>
+                    </tr>
+                    <tr>
+                        <td>Петров Петр</td>
+                        <td>18.04.21</td>
+                        <td>3000₽</td>
+                    </tr>
+                    <tr>
+                        <td>Сидоров Сидор</td>
+                        <td>20.04.21</td>
+                        <td>4500₽</td>
+                    </tr>
+                    <tr>
+                        <td>Кузнецов Кузьма</td>
+                        <td>22.04.21</td>
+                        <td>4000₽</td>
+                    </tr>
+                    <tr>
+                        <td>Лебедев Лев</td>
+                        <td>25.04.21</td>
+                        <td>2500₽</td>
+                    </tr>
+                    <tr>
+                        <td>Григорьев Григорий</td>
+                        <td>28.04.21</td>
+                        <td>3500₽</td>
+                    </tr>
+                    <tr>
+                        <td>Богданов Богдан</td>
+                        <td>01.05.21</td>
+                        <td>2000₽</td>
+                    </tr>
+                    <tr>
+                        <td>Николаев Николай</td>
+                        <td>05.05.21</td>
+                        <td>6000₽</td>
+                    </tr>
+                    <tr>
+                        <td>Федоров Федор</td>
+                        <td>10.05.21</td>
+                        <td>7000₽</td>
+                    </tr>
+                    <tr>
+                        <td>Егоров Егор</td>
+                        <td>15.05.21</td>
+                        <td>8000₽</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Общая сумма</td>
+                        <td>45500₽</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Спортивный клуб
+    </footer>
+    <script src="script-stats.js"></script>
+</body>
+</html>
